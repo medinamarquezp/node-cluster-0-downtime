@@ -10,4 +10,4 @@ Es buena práctica controlar esta condición para asegurarnos de que el proceso 
 
 Si ejecutamos el código, podremos observar que, después de una cantidad aleatoria de segundos, los workers comenzarán a fallar y el proceso maestro inmediatamente comenzará a crear nuevos workers para aumentar la disponibilidad del sistema. De hecho, podemos medir la disponibilidad usando el comando **ab** (https://httpd.apache.org/docs/2.4/programs/ab.html) para ver cuántas solicitudes no pudo gestionar el servidor. Solo 6 solicitudes fallaron de 2000 en un intervalo de unos 6 segundos con 200 peticiones simultáneas. Eso es más del 99% de disponibilidad:
 
-
+![Apache Benchmark](https://raw.githubusercontent.com/medinamarquezp/node-cluster-0-downtime/master/img/ab.png)
